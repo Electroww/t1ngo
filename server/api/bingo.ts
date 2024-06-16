@@ -18,8 +18,6 @@ export default defineEventHandler((event) => {
     data.map((item) => ({ ...item, id: nanoid() })) as BingoCell[]
   );
 
-  console.log(data.length);
-
   matrix = shuffledBingoCells.slice(0, 25);
 
   return matrix;

@@ -1,10 +1,7 @@
 <template>
   <div
-    className="gap-16 pb-16 flex-col-reverse flex 2xl:pb-0 2xl:flex-row h-full overflow-hidden relative"
+    className="pb-10 flex-col-reverse flex 2xl:pb-0 2xl:flex-row h-full overflow-hidden relative"
   >
-    <!-- <h1 class="font-modak text-5xl text-red2">
-    T1 BINGO!
-  </h1> -->
     <div class="flex-1">
       <Grid />
     </div>

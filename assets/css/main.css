@@ -10,10 +10,8 @@
 }
 
 body,
-html {
-  @apply bg-yellow h-full;
-}
-
+html,
 #__nuxt {
-  @apply 2xl:h-full;
+  @apply bg-white1 2xl:bg-yellow 2xl:h-full;
+  scroll-behavior: smooth;
 }

@@ -2,14 +2,16 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-
+  alias: {
+    "lib/utils/": "~/lib/utils/",
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  modules: ["shadcn-nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
   shadcn: {
     /**
      * Prefix for all the imported component

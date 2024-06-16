@@ -1,8 +1,21 @@
 <template>
-  <div class="w-full h-full flex items-center justify-center">
+  <div
+    id="bingo"
+    class="w-full h-full flex flex-col items-center justify-center gap-10"
+  >
+    <div class="2xl:hidden flex justify-center items-center gap-5 pt-6 w-full">
+      <button @click="generateAndClean()" class="generate">Generate</button>
+      <button
+        @click="screenshotAndDownload()"
+        class="share flex gap-2 items-center"
+      >
+        <img class="w-8" :src="Screenshot" />
+        screenshot
+      </button>
+    </div>
     <div
       ref="bingo"
-      class="border-2 outline-[0.8rem] outline-dark outline rounded-xl border-white1 w-[50rem] h-[50rem] grid grid-cols-5 overflow-hidden"
+      class="border-2 outline-[0.8rem] outline-dark outline rounded-xl border-white1 md:w-[50rem] md:h-[50rem] grid grid-cols-5 overflow-hidden"
     >
       <div
         v-for="cell in data"
@@ -16,7 +29,7 @@
             v-if="checkeds.includes(cell.id)"
             class="absolute w-full h-full bg-black/50 flex items-center justify-center z-20"
           >
-            <img :src="Check" class="w-20" />
+            <img :src="Check" class="w-14 md:w-20" />
           </div>
         </Transition>
         <img
@@ -24,7 +37,9 @@
           :src="images[cell.type]"
           width="90px"
         />
-        <span class="label-cell font-bold leading-4">{{ cell.text }}</span>
+        <span class="label-cell font-bold leading-4 text-xs md:text-base">{{
+          cell.text
+        }}</span>
       </div>
     </div>
   </div>
@@ -52,6 +67,7 @@ import Supp from "@/assets/images/supp.svg";
 import Check from "@/assets/images/check.svg";
 import type { BingoCell } from "@/types/bingo";
 import useScreenshot from "@/composables/useScreenshot";
+import Screenshot from "@/assets/images/screenshot.svg";
 
 const colors = {
   red1: "bg-red1",
@@ -93,8 +109,13 @@ const images = {
 const { data, generateBingoCard } = await useGenerateBingoCard();
 await generateBingoCard();
 
-const { setBingoRef } = useScreenshot();
+const { setBingoRef, screenshotAndDownload } = useScreenshot();
 const bingo = ref(null);
+
+const generateAndClean = async () => {
+  await generateBingoCard();
+  checkeds.value = [];
+};
 
 watchEffect(() => {
   if (bingo.value) {
