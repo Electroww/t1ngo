@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Modak";
+  src: url("~/assets/fonts/Modak.woff") format("woff");
+}
+
+body,
+html {
+  @apply bg-yellow h-full;
+}
+
+#__nuxt {
+  @apply 2xl:h-full;
+}
