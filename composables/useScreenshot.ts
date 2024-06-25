@@ -9,7 +9,12 @@ const useScreenshot = () => {
   const screenshotAndDownload = async () => {
     if (!bingoRef.value) return;
     try {
-      const canvas = await html2canvas(bingoRef.value);
+      const canvas = await html2canvas(bingoRef.value, {
+        scale: 1,
+        windowWidth: 1920,
+        windowHeight: 1080,
+        backgroundColor: null,
+      });
       const image = canvas.toDataURL("image/png");
       downloadImage(image, "my_t1ngo_screenshot.png");
     } catch (error) {

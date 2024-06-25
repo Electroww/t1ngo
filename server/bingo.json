@@ -1,142 +1,338 @@
 [
     {
-        "color": "yellow",
         "type": "t1",
         "text": "T1 gets first blood"
     },
     {
-        "color": "red1",
         "type": "faker",
         "text": "Faker use an emote"
     },
     {
-        "color": "yellow",
         "type": "t1",
         "text": "T1 gets Mountain Soul"
     },
     {
-        "color": "red2",
-        "type": "solobolo",
-        "text": "Oner Solokill"
+        "type": "pog",
+        "text": "Zeus POG"
     },
     {
-        "color": "red1",
-        "type": "rage",
-        "text": "Missed dive"
+        "type": "pog",
+        "text": "Oner POG"
     },
     {
-        "color": "yellow",
-        "type": "oner",
-        "text": "Oner peace sign"
+        "type": "pog",
+        "text": "Faker POG"
     },
     {
-        "color": "red2",
+        "type": "pog",
+        "text": "Gumayusi POG"
+    },
+    {
         "type": "pog",
         "text": "Keria POG"
     },
     {
-        "color": "yellow",
-        "type": "t1",
-        "text": "T1 gets the 6 voids grubs"
+        "type": "pog",
+        "text": "12/12 POG votes"
     },
     {
-        "color": "yellow",
-        "type": "t1",
-        "text": "T1 first tower"
-    },
-    {
-        "color": "red1",
-        "type": "rage",
-        "text": "Misses canon in lane"
-    },
-    {
-        "color": "red1",
-        "type": "kkabi",
-        "text": "No ending voicecomms"
-    },
-    {
-        "color": "red2",
-        "type": "keria",
-        "text": "Keria's cooking"
-    },
-    {
-        "color": "red2",
-        "type": "oke",
-        "text": "Game more than 40 minutes"
-    },
-    {
-        "color": "yellow",
-        "type": "cup",
-        "text": "T1 wins the BO"
-    },
-    {
-        "color": "yellow",
         "type": "oner",
-        "text": "Oner pick lee sin"
+        "text": "Oner objective steal"
     },
     {
-        "color": "red1",
-        "type": "rage",
-        "text": "T1 gives first blood"
+        "type": "jgl",
+        "text": "Non-jungler objective steal"
     },
     {
-        "color": "red1",
-        "type": "zeus",
-        "text": "Zeus lead plates @10"
+        "type": "t1",
+        "text": "Global ult objective steal"
     },
     {
-        "color": "red2",
-        "type": "guma",
-        "text": "Guma pick Varus"
-    },
-    {
-        "color": "red2",
-        "type": "lck",
-        "text": "12/12 POG vote"
-    },
-    {
-        "color": "red2",
         "type": "cup",
-        "text": "T1 clean sweep"
+        "text": "Game less than 25 mins"
     },
     {
-        "color": "red2",
+        "type": "oke",
+        "text": "Game more than 40 mins"
+    },
+    {
+        "type": "rage",
+        "text": "Missed ban"
+    },
+    {
+        "type": "oner",
+        "text": "Oner hovers Nidalee"
+    },
+    {
+        "type": "oke",
+        "text": "T1 wins with no Baron taken"
+    },
+    {
         "type": "faker",
         "text": "Faker meditates"
     },
     {
-        "color": "yellow",
         "type": "niceu",
-        "text": "Quadrakill"
+        "text": "Someone looks directly at camera"
     },
     {
-        "color": "yellow",
         "type": "niceu",
-        "text": "Winning lvl 1 invade"
+        "text": "Pro view gets shown"
     },
     {
-        "color": "yellow",
+        "type": "niceu",
+        "text": "T1 gets first blood"
+    },
+    {
+        "type": "niceu",
+        "text": "T1 gets first tower"
+    },
+    {
+        "type": "t1",
+        "text": "T1 baron (20-22 min)"
+    },
+    {
+        "type": "t1",
+        "text": "For fun herald drive"
+    },
+    {
+        "type": "t1",
+        "text": "Global Ult Kill"
+    },
+    {
+        "type": "pog",
+        "text": "Pentakill"
+    },
+    {
+        "type": "rage",
+        "text": "Pentasteal"
+    },
+    {
+        "type": "kkabi",
+        "text": "Delay, Pause, or Chronobreak"
+    },
+    {
+        "type": "jgl",
+        "text": "4 of the same dragon"
+    },
+    {
+        "type": "niceu",
+        "text": "T1 gets Dragon Soul"
+    },
+    {
+        "type": "rage",
+        "text": "T1 Flame Horizons Opponent"
+    },
+    {
+        "type": "niceu",
+        "text": "T1 gets all 6 Voidgrubs"
+    },
+    {
+        "type": "t1",
+        "text": "Level 1 invade"
+    },
+    {
+        "type": "t1",
+        "text": "T1 new unique champion (any lane)"
+    },
+    {
+        "type": "t1",
+        "text": "T1 gets fountain-lasered"
+    },
+    {
+        "type": "pog",
+        "text": "Triple Kill!"
+    },
+    {
+        "type": "rage",
+        "text": "T1 lane swaps"
+    },
+    {
+        "type": "solobolo",
+        "text": "Zeus solokill"
+    },
+    {
+        "type": "solobolo",
+        "text": "Oner solokill"
+    },
+    {
+        "type": "solobolo",
+        "text": "Faker solokill"
+    },
+    {
+        "type": "solobolo",
+        "text": "Gumayusi solokill"
+    },
+    {
+        "type": "solobolo",
+        "text": "Keria solokill"
+    },
+    {
+        "type": "pog",
+        "text": "GuKe duokill"
+    },
+    {
+        "type": "kkabi",
+        "text": "No ending voicecomms"
+    },
+    {
+        "type": "t1",
+        "text": "T1 coach reaction"
+    },
+    {
+        "type": "niceu",
+        "text": "GuKe match skins"
+    },
+    {
+        "type": "niceu",
+        "text": "Special entrance or poses"
+    },
+    {
+        "type": "oke",
+        "text": "Executes under tower"
+    },
+    {
         "type": "cup",
-        "text": "Kk0ma smile"
+        "text": "Casters use Worlds ref."
     },
     {
-        "color": "red1",
+        "type": "cup",
+        "text": "T1 wins with 10k or more gold lead"
+    },
+    {
+        "type": "t1",
+        "text": "Bald or Cross-dressed thumbnail"
+    },
+    {
         "type": "faker",
         "text": "Faker thumbs up"
     },
     {
-        "color": "red1",
+        "type": "zeus",
+        "text": "Zeus signature pose"
+    },
+    {
+        "type": "oner",
+        "text": "Oner peace sign or thumbs up"
+    },
+    {
+        "type": "guma",
+        "text": "Gumayusi champ ceremony"
+    },
+    {
+        "type": "keria",
+        "text": "Keria ceremony"
+    },
+    {
+        "type": "t1",
+        "text": "Tom feedback on stage"
+    },
+    {
         "type": "rage",
-        "text": "500$ skin is played"
+        "text": "Misses cannon in lane"
     },
     {
-        "color": "yellow",
-        "type": "cup",
-        "text": "T1 reverse sweep"
+        "type": "pog",
+        "text": "T1 gets or sneaks Baron for free"
     },
     {
-        "color": "yellow",
+        "type": "niceu",
+        "text": "T1 player lives with less than 10% health"
+    },
+    {
+        "type": "niceu",
+        "text": "Herald smashes more than one tower"
+    },
+    {
+        "type": "oke",
+        "text": "No one drives the Herald"
+    },
+    {
+        "type": "niceu",
+        "text": "Loses objective but wins teamfight"
+    },
+    {
+        "type": "pog",
+        "text": "There's a backdoor"
+    },
+    {
+        "type": "pog",
+        "text": "T1 Ace"
+    },
+    {
+        "type": "pog",
+        "text": "Quadrakill!"
+    },
+    {
+        "type": "niceu",
+        "text": "Double Kill!"
+    },
+    {
+        "type": "niceu",
+        "text": "More plate gold taken @14 mins"
+    },
+    {
+        "type": "jgl",
+        "text": "T1 gets first dragon"
+    },
+    {
+        "type": "jgl",
+        "text": "T1 gets first set of void grubs"
+    },
+    {
+        "type": "jgl",
+        "text": "T1 gets second set of void grubs"
+    },
+    {
+        "type": "jgl",
+        "text": "T1 gets Rift Herald"
+    },
+    {
+        "type": "pog",
+        "text": "T1 gets Elder Dragon"
+    },
+    {
+        "type": "niceu",
+        "text": "New LCK record"
+    },
+    {
         "type": "faker",
-        "text": "Faker pick azir (again)"
+        "text": "Enemy team uses Faker emotes"
+    },
+    {
+        "type": "niceu",
+        "text": "Hide on bush ward used"
+    },
+    {
+        "type": "niceu",
+        "text": "$500 skin used by anyone"
+    },
+    {
+        "type": "rage",
+        "text": "Someone trolls 12/12 POG vote"
+    },
+    {
+        "type": "rage",
+        "text": "3 or more same lane bans"
+    },
+    {
+        "type": "adc",
+        "text": "3+ ADCs in same team"
+    },
+    {
+        "type": "t1",
+        "text": "No tank comp"
+    },
+    {
+        "type": "t1",
+        "text": "T1 Happy Gaming moment"
+    },
+    {
+        "type": "jgl",
+        "text": "T1 double scuttle crab"
+    },
+    {
+        "type": "oner",
+        "text": "Oner ganks before lvl. 6"
     }
 ]

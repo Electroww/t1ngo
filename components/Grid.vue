@@ -3,7 +3,9 @@
     id="bingo"
     class="w-full h-full flex flex-col items-center justify-center gap-10"
   >
-    <div class="2xl:hidden flex justify-center items-center gap-5 pt-6 w-full">
+    <div
+      class="2xl:hidden flex flex-wrap justify-center items-center gap-5 pt-6 w-full"
+    >
       <button @click="generateAndClean()" class="generate">Generate</button>
       <button
         @click="screenshotAndDownload()"
@@ -14,32 +16,48 @@
       </button>
     </div>
     <div
+      class="rounded-3xl border-[0.8rem] border-dark overflow-hidden"
       ref="bingo"
-      class="border-2 outline-[0.8rem] outline-dark outline rounded-xl border-white1 md:w-[50rem] md:h-[50rem] grid grid-cols-5 overflow-hidden"
     >
       <div
-        v-for="cell in data"
-        :key="cell.id"
-        class="relative flex min-h-full flex-col items-center justify-center text-center border-2 border-white1 text-white1 cursor-pointer box-border p-5"
-        :class="[colors[cell.color], { cell: !checkeds.includes(cell.id) }]"
-        @click="handleClick(cell)"
+        class="border-2 rounded-xl border-white1 md:w-[50rem] md:h-[50rem] grid grid-cols-5 overflow-hidden gap-1 bg-white"
       >
-        <Transition name="appear">
+        <div
+          v-for="(cell, index) in data"
+          :key="cell.id"
+          class="cursor-pointer box-border rounded-lg overflow-hidden"
+          :class="[colors[cell.color], { cell: !checkeds.includes(cell.id) }]"
+          @click="handleClick(cell)"
+        >
           <div
-            v-if="checkeds.includes(cell.id)"
-            class="absolute w-full h-full bg-black/50 flex items-center justify-center z-20"
+            class="relative flex min-h-full w-full flex-col items-center justify-center text-center text-white1 p-5"
+            v-if="index !== 12"
           >
-            <img :src="Check" class="w-14 md:w-20" />
+            <Transition name="appear">
+              <div
+                v-if="checkeds.includes(cell.id)"
+                class="absolute w-full h-full bg-black/50 flex items-center justify-center z-20"
+              >
+                <img :src="Check" class="w-14 md:w-20" />
+              </div>
+            </Transition>
+            <img
+              class="img-cell transition-all w-20"
+              :src="images[cell.type]"
+            />
+            <span
+              class="label-cell font-bold text-sm leading-4 md:text-base md:leading-4"
+              >{{ cell.text }}</span
+            >
           </div>
-        </Transition>
-        <img
-          class="img-cell transition-all"
-          :src="images[cell.type]"
-          width="90px"
-        />
-        <span class="label-cell font-bold leading-4 text-xs md:text-base">{{
-          cell.text
-        }}</span>
+          <div
+            class="relative flex min-h-full w-full flex-col items-center justify-center font-modak text-center bg-dark text-white1 p-5 text-xl md:text-4xl"
+            v-else
+          >
+            <img src="@/assets/images/t1.svg" class="w-20" />
+            T1NGO
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -85,6 +103,7 @@ const handleClick = (cell: BingoCell) => {
   }
 };
 
+//TODO: Need to do something better with typeColorMap struct
 const images = {
   cup: Cup,
   faker: Faker,

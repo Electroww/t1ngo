@@ -57,7 +57,7 @@
           <ol
             class="list-decimal font-lexend font-medium text-left text-base md:text-lg 2xl:text-lg text-dark"
           >
-            <li>Generate a bingo card by clicking the <b>button below.</b></li>
+            <li>Generate a bingo card by clicking the <b>button above.</b></li>
             <li>
               While watching the series, mark the items that has happened in the
               game by clicking on the square.
