@@ -20,7 +20,7 @@
       ref="bingo"
     >
       <div
-        class="border-2 rounded-xl border-white1 md:w-[50rem] md:h-[50rem] grid grid-cols-5 overflow-hidden gap-1 bg-white"
+        class="border-2 rounded-xl border-white1 md:w-[50rem] md:h-[50rem] grid grid-cols-5 overflow-hidden gap-1 bg-white1"
       >
         <div
           v-for="(cell, index) in data"
@@ -30,7 +30,7 @@
           @click="handleClick(cell)"
         >
           <div
-            class="relative flex min-h-full w-full flex-col items-center justify-center text-center text-white1 p-5"
+            class="relative flex h-full w-full flex-col items-center justify-center text-center text-white1 py-5 px-3"
             v-if="index !== 12"
           >
             <Transition name="appear">
@@ -51,11 +51,10 @@
             >
           </div>
           <div
-            class="relative flex min-h-full w-full flex-col items-center justify-center font-modak text-center bg-dark text-white1 p-5 text-xl md:text-4xl"
+            class="flex flex-col h-full items-center justify-center font-modak bg-dark text-white1 box-border"
             v-else
           >
-            <img src="@/assets/images/t1.svg" class="w-20" />
-            T1NGO
+            <img src="@/assets/images/t1ngo.svg" class="h-24" />
           </div>
         </div>
       </div>
