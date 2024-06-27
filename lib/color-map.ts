@@ -16,7 +16,7 @@ const typeColorMap: { [key: string]: string } = {
   jgl: "red1",
   mid: "red2",
   top: "red1",
-  adc: "red2",
+  bot: "red2",
   supp: "red1",
 };
 

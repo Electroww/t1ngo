@@ -1,7 +1,7 @@
 <template>
   <div
     id="bingo"
-    class="w-full h-full flex flex-col items-center justify-center gap-10"
+    class="w-full h-full flex flex-col items-center justify-center gap-4"
   >
     <div
       class="2xl:hidden flex flex-wrap justify-center items-center gap-5 pt-6 w-full"
@@ -47,6 +47,7 @@
             />
             <span
               class="label-cell font-bold text-sm leading-4 md:text-base md:leading-4"
+              :class="cell.color === 'yellow' ? 'text-dark/90' : 'text-white1'"
               >{{ cell.text }}</span
             >
           </div>

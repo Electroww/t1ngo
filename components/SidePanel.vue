@@ -2,25 +2,25 @@
   <div
     class="flex flex-col min-h-dvh bg-red1 2xl:h-full w-full 2xl:max-w-[40%] right-0 overflow-hidden transition-all duration-300 ease-in-out"
   >
-    <div class="flex w-full gap-5 flex-col items-center py-10">
+    <div class="flex w-full gap-5 flex-col items-center pt-10 pb-8">
       <div class="w-fit text-center relative">
         <img
           :src="Star"
-          class="w-10 h-10 2xl:w-12 2xl:h-12 text-yellow absolute -left-8 top-10 xl:-left-12 xl:top-16"
+          class="w-10 h-10 2xl:w-11 2xl:h-11 text-yellow absolute -left-8 top-10 xl:-left-12 xl:top-16"
         />
         <h1
-          class="font-modak text-6xl xl:text-7xl 2xl:text-[6rem] text-yellow uppercase text-center"
+          class="font-modak text-6xl xl:text-5xl 2xl:text-6xl text-yellow uppercase text-center"
         >
           Let’s Play
         </h1>
         <h1
-          class="font-modak text-5xl xl:text-8xl 2xl:text-[7rem] text-white1 uppercase -mt-4"
+          class="font-modak text-5xl xl:text-7xl 2xl:text-[5rem] text-white1 uppercase -mt-4"
         >
           T1 BINGO!
         </h1>
         <img
           :src="Star"
-          class="w-10 h-10 2xl:w-12 2xl:h-12 text-yellow absolute -right-10 xl:-right-16 bottom-10 rotate-45"
+          class="w-10 h-10 2xl:w-11 2xl:h-11 text-yellow absolute -right-10 xl:-right-16 bottom-10 rotate-45"
         />
       </div>
       <div
@@ -49,11 +49,11 @@
     <div
       class="bg-white1 w-full rounded-t-[4rem] py-8 px-16 md:px-48 2xl:px-16 flex-1"
     >
-      <div class="flex flex-col gap-12">
+      <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-4">
-          <h2 class="text-red1 font-modak text-5xl uppercase text-center">
+          <di class="text-red1 font-modak text-4xl uppercase text-center">
             How to play?
-          </h2>
+          </di>
           <ol
             class="list-decimal font-lexend font-medium text-left text-base md:text-lg 2xl:text-lg text-dark"
           >
@@ -70,7 +70,7 @@
           </ol>
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="text-red1 font-modak text-5xl uppercase text-center">
+          <h2 class="text-red1 font-modak text-4xl uppercase text-center">
             Notes
           </h2>
           <p

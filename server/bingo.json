@@ -4,10 +4,6 @@
         "text": "T1 gets first blood"
     },
     {
-        "type": "faker",
-        "text": "Faker use an emote"
-    },
-    {
         "type": "t1",
         "text": "T1 gets Mountain Soul"
     },
@@ -32,7 +28,7 @@
         "text": "Keria POG"
     },
     {
-        "type": "pog",
+        "type": "lck",
         "text": "12/12 POG votes"
     },
     {
@@ -181,7 +177,7 @@
     },
     {
         "type": "niceu",
-        "text": "GuKe match skins"
+        "text": "Wearing no skin (except faker)"
     },
     {
         "type": "niceu",
@@ -292,7 +288,7 @@
         "text": "T1 gets Elder Dragon"
     },
     {
-        "type": "niceu",
+        "type": "lck",
         "text": "New LCK record"
     },
     {
@@ -308,7 +304,7 @@
         "text": "$500 skin used by anyone"
     },
     {
-        "type": "rage",
+        "type": "lck",
         "text": "Someone trolls 12/12 POG vote"
     },
     {
@@ -316,7 +312,7 @@
         "text": "3 or more same lane bans"
     },
     {
-        "type": "adc",
+        "type": "bot",
         "text": "3+ ADCs in same team"
     },
     {
