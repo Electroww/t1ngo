@@ -11,6 +11,18 @@
 
 body,
 html {
-  @apply bg-white1 2xl:bg-yellow 2xl:h-full;
+  @apply bg-white1 2xl:bg-yellow h-full;
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  @apply bg-white1 w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white1;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark rounded-full;
 }

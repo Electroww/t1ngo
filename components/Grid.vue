@@ -16,11 +16,11 @@
       </button>
     </div>
     <div
-      class="rounded-3xl border-[0.8rem] border-dark overflow-hidden"
+      class="rounded-[4vmin] border-[1.4vmin] border-dark overflow-hidden"
       ref="bingo"
     >
       <div
-        class="border-2 rounded-xl border-white1 md:w-[50rem] md:h-[50rem] grid grid-cols-5 overflow-hidden gap-1 bg-white1"
+        class="border-[0.4vmin] rounded-[2.6vmin] border-white1 w-[90vmin] h-[90vmin] grid grid-cols-5 grid-rows-5 overflow-hidden gap-[0.4%] bg-white1"
       >
         <div
           v-for="(cell, index) in data"
@@ -30,7 +30,7 @@
           @click="handleClick(cell)"
         >
           <div
-            class="relative flex h-full w-full flex-col items-center justify-center text-center text-white1 py-5 px-3"
+            class="relative flex h-full w-full flex-col items-center justify-center text-center text-white1 px-[4%] p-[2%]"
             v-if="index !== 12"
           >
             <Transition name="appear">
@@ -38,15 +38,15 @@
                 v-if="checkeds.includes(cell.id)"
                 class="absolute w-full h-full bg-black/50 flex items-center justify-center z-20"
               >
-                <img :src="Check" class="w-14 md:w-20" />
+                <img :src="Check" class="w-[50%]" />
               </div>
             </Transition>
             <img
-              class="img-cell transition-all w-20"
+              class="img-cell transition-all w-[50%]"
               :src="images[cell.type]"
             />
             <span
-              class="label-cell font-bold text-sm leading-4 md:text-base md:leading-4"
+              class="label-cell font-bold text-[1.8vmin] leading-tight mt-[2%]"
               :class="cell.color === 'yellow' ? 'text-dark/90' : 'text-white1'"
               >{{ cell.text }}</span
             >
@@ -55,7 +55,7 @@
             class="flex flex-col h-full items-center justify-center font-modak bg-dark text-white1 box-border"
             v-else
           >
-            <img src="@/assets/images/t1ngo.svg" class="h-24" />
+            <img src="@/assets/images/t1ngo.svg" class="h-[60%]" />
           </div>
         </div>
       </div>

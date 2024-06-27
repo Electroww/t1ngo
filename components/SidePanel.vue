@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col min-h-dvh bg-red1 2xl:h-full w-full 2xl:max-w-[40%] right-0 overflow-hidden transition-all duration-300 ease-in-out"
+    class="flex flex-col min-h-dvh 2xl:max-h-dvh bg-red1 2xl:max-w-[40%] right-0 overflow-y-auto"
   >
     <div class="flex w-full gap-5 flex-col items-center pt-10 pb-8">
       <div class="w-fit text-center relative">
@@ -51,9 +51,9 @@
     >
       <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-4">
-          <di class="text-red1 font-modak text-4xl uppercase text-center">
+          <div class="text-red1 font-modak text-4xl uppercase text-center">
             How to play?
-          </di>
+          </div>
           <ol
             class="list-decimal font-lexend font-medium text-left text-base md:text-lg 2xl:text-lg text-dark"
           >
@@ -82,6 +82,21 @@
               >@gumayusing</a
             >
             on Twitter.
+          </p>
+          <p class="text-center">
+            v1.0, better viewed on desktop<br />
+            created by
+            <a class="font-bold" href="https://twitter.com/gumayusing"
+              >@gumayusing</a
+            >
+            | assisted by
+            <a class="font-bold" href="https://twitter.com/shiriusa"
+              >@Shiriusa</a
+            >
+            | website by
+            <a class="font-bold" href="https://twitter.com/electrowfctn"
+              >@Electrowfctn</a
+            >
           </p>
         </div>
       </div>
