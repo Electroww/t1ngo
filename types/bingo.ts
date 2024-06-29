@@ -1,3 +1,4 @@
+/* This for asset type for bingo cell */
 type BingoCellType =
   | "cup"
   | "faker"
@@ -16,15 +17,19 @@ type BingoCellType =
   | "lck"
   | "t1"
   | "jgl"
-  | "supp";
+  | "supp"
+  | "top";
 
-type BingoColors = "red1" | "red2" | "yellow";
+/* This for color type for bingo cell */
+type BingoColor = "red1" | "red2" | "yellow";
 
 type BingoCell = {
   id: string;
-  color: BingoColors;
-  type: BingoCellType;
+  color: BingoColor;
   text: string;
+  asset: string;
 };
 
-export type { BingoCell, BingoCellType, BingoColors };
+type BingoCard = BingoCell[];
+
+export type { BingoCell, BingoCellType, BingoColor, BingoCard };

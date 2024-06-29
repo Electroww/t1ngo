@@ -1,4 +1,6 @@
-const typeColorMap: { [key: string]: string } = {
+import type { BingoCellType, BingoColor } from "~/types/bingo";
+
+const typeColorMap: Record<BingoCellType, BingoColor> = {
   t1: "yellow",
   faker: "red1",
   solobolo: "red2",

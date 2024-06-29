@@ -41,10 +41,7 @@
                 <img :src="Check" class="w-[50%]" />
               </div>
             </Transition>
-            <img
-              class="img-cell transition-all w-[50%]"
-              :src="images[cell.type]"
-            />
+            <img class="img-cell transition-all w-[50%]" :src="cell.asset" />
             <span
               class="label-cell font-bold text-[1.8vmin] leading-tight mt-[2%]"
               :class="cell.color === 'yellow' ? 'text-dark/90' : 'text-white1'"
@@ -64,24 +61,6 @@
 </template>
 
 <script setup lang="ts">
-import Cup from "@/assets/images/worldscup.svg";
-import Faker from "@/assets/images/faker.svg";
-import Zeus from "@/assets/images/zeus.svg";
-import Keria from "@/assets/images/keria.svg";
-import Oner from "@/assets/images/oner.svg";
-import Guma from "@/assets/images/guma.svg";
-import Oke from "@/assets/images/oke.svg";
-import Pog from "@/assets/images/pog.svg";
-import Solobolo from "@/assets/images/solobolo.svg";
-import Niceu from "@/assets/images/niceu.svg";
-import Kkabi from "@/assets/images/kkabi.svg";
-import Rage from "@/assets/images/rage.svg";
-import Bot from "@/assets/images/bot.svg";
-import Mid from "@/assets/images/mid.svg";
-import Lck from "@/assets/images/lck.svg";
-import T1 from "@/assets/images/t1.svg";
-import Jgl from "@/assets/images/jgl.svg";
-import Supp from "@/assets/images/supp.svg";
 import Check from "@/assets/images/check.svg";
 import type { BingoCell } from "@/types/bingo";
 import useScreenshot from "@/composables/useScreenshot";
@@ -101,28 +80,6 @@ const handleClick = (cell: BingoCell) => {
   } else {
     checkeds.value = [...checkeds.value, cell.id];
   }
-};
-
-//TODO: Need to do something better with typeColorMap struct
-const images = {
-  cup: Cup,
-  faker: Faker,
-  zeus: Zeus,
-  keria: Keria,
-  oner: Oner,
-  guma: Guma,
-  oke: Oke,
-  pog: Pog,
-  solobolo: Solobolo,
-  niceu: Niceu,
-  kkabi: Kkabi,
-  rage: Rage,
-  bot: Bot,
-  mid: Mid,
-  lck: Lck,
-  t1: T1,
-  jgl: Jgl,
-  supp: Supp,
 };
 
 const { data, generateBingoCard } = await useGenerateBingoCard();
